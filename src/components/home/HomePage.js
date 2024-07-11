@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -23,7 +24,10 @@ function HomePage() {
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>
-                <Button variant="primary">Get Started</Button>
+                <Link
+                to={{pathname: '/contacts'}}>
+                <Button variant="primary">View Contacts</Button>
+                </Link>
             </Col>
         </Row>
         </Container>

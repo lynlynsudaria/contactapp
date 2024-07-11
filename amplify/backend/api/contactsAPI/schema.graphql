@@ -1,0 +1,11 @@
+input AMPLIFY {
+  globalAuthRule: AuthRule = { allow: public }
+} #
+
+type Contact @model {
+  id: ID!
+  name: String!
+  email: String!
+  contact: String!
+  profilePicPath: String!
+}
