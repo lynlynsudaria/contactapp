@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import {API, graphqlOperation, Storage} from '@aws-amplify';
+import { useState } from 'react';
+//import {Amplify} from 'aws-amplify';
+//import { API, graphqlOperation, Storage } from 'aws-amplify';
 
 import {createContact} from '../../graphql/mutations';
 
@@ -11,7 +12,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { v4 as uuid } from 'uuid';
 
-function Contacts() {
+function Contacts(props) {
   const [contactData, setContactData] = useState({ name: "", email: "", contact: "" });
   const [profilePic, setProfilePic] = useState("");
 
@@ -29,7 +30,7 @@ function Contacts() {
       profilePicPath:key
     };
 
-    await API.graphql(graphqlOperation(createContact, {input: newContact}));
+    //await API.graphql(graphqlOperation(createContact, {input: newContact}));
   };
 
   return (

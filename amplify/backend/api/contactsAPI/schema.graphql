@@ -1,6 +1,3 @@
-input AMPLIFY {
-  globalAuthRule: AuthRule = { allow: public }
-} #
 
 type Contact @model {
   id: ID!

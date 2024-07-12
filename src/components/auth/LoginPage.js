@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button'; // Import Button component
 
-function LoginPage() {
+function LoginPage(props) {
   return (
     <Container>
       <Row className="px-4 my-5">

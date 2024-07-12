@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {Route, Routes} from 'react-router-dom';
 
 import {Amplify} from 'aws-amplify';
@@ -5,7 +6,7 @@ import {Authenticator, View, Image, useTheme, Text} from "@aws-amplify/ui-react"
 import awsExports from './aws-exports';
 
 import './App.css';
-//import bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
+import bootstrap from 'bootstrap/dist/css/bootstrap.min.css';
 import '@aws-amplify/ui-react/styles.css';
 
 import SiteFooter from './components/common/SiteFooter';
