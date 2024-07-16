@@ -7,7 +7,7 @@ function SiteFooter() {
                 <p className="text-end">&copy; 2024</p>
             </Container>
         </footer>
-    );
+    )
 }
 
 export default SiteFooter;
